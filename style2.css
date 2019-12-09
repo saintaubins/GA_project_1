@@ -37,7 +37,7 @@ a{
 }
 .container{
     display: grid;
-    background-color: lightgreen;
+    background-color: rgb(222, 162, 90);
     grid-column-gap: 50px;
     grid-row-gap: 50px;
     grid-template-columns: auto auto;
@@ -69,7 +69,7 @@ a{
     text-align: center;
     margin: auto;
 }
-.reset{
+.stop{
     color: black;
     border: 2px solid grey;
     border-radius: 10px;

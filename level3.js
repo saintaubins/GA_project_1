@@ -7,7 +7,7 @@
  *                     Memory Game, Simon                   *
  *                                                          *
  *                          Project 1                       *
- *                                                          *
+ *                           level 3                        *
  *                                                          *
  ************************************************************
  ***********************************************************/
@@ -24,7 +24,7 @@ console.log('javaScript is live');
 let start = document.querySelector('.start');
 
 //Grabbing stop button from the DOM
-let reset = document.querySelector('.reset');
+let stop = document.querySelector('.stop');
 
 //grabbing the squares from the DOM
 //note the array is already filled
@@ -61,10 +61,10 @@ let randomSquare = 0;
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
-randomSquare = getRndInteger(0,3);
+randomSquare = getRndInteger(0,4);
 
 //filling flashArray with random integers
-for(let i = 0; i < 4; i++){
+for(let i = 0; i < 6; i++){
     flashArray += getRndInteger(0,3);
     console.log('flashArray = ', flashArray);
 }
@@ -82,7 +82,7 @@ for (let i = 0; i < square.length; i++){
 start.addEventListener('click', flashPattern);
 
 //eventListener to stop the game
-reset.addEventListener('click', resetGame);
+stop.addEventListener('click', stopGame);
 
 /******************* My functions **************************/
 
@@ -101,16 +101,16 @@ function flashPattern(){
         // not storing function in a avariable, known as anymous
         // function
         setTimeout(() => {
-            console.log('beggining of add class', index + delay);
+            console.log('beggining of add class', index );
             square[flashArray[index]].classList.add('flash');
-            console.log('end of add class', index + delay);
+            console.log('end of add class', index );
             //setTimeout(flashOff, delay);
         }, delay);
         // same here the scope is only to the for loop
         setTimeout(() => {
-            console.log('beggining remove class', index + delay);
+            console.log('beggining remove class', index );
             square[flashArray[index]].classList.remove('flash');
-            console.log('end of remove class', index + delay);
+            console.log('end of remove class', index );
             //setTimeout(flashOff, delay);
         }, delay = delay + 1000);
         //setTimeout(flashOff, delay + 1000);
@@ -120,8 +120,8 @@ function flashPattern(){
     //done  = true;
 }
 //making function called stop game to stop the game.
-function resetGame(){
-    console.log('resetGame clicked');
+function stopGame(){
+    console.log('stopGame clicked');
     window.location.reload();
 }
 //this is supposed to see if the pattern followed by
@@ -138,7 +138,7 @@ function verifyFlashPattern(evt){
     //this part is checking if clicked array matches the random
     //array
         checkArray += evt.target.id
-        if(clicks == 3) { 
+        if(clicks == 5) { 
             if(checkArray === flashArray && checkArray.length === flashArray.length){
             console.log('its a match');
             message = 'Its a match';

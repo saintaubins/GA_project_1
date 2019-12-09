@@ -65,7 +65,7 @@ randomSquare = getRndInteger(0,4);
 
 //filling flashArray with random integers
 for(let i = 0; i < 5; i++){
-    flashArray += getRndInteger(0,4);
+    flashArray += getRndInteger(0,3);
     console.log('flashArray = ', flashArray);
 }
 
@@ -122,6 +122,7 @@ function flashPattern(){
 //making function called stop game to stop the game.
 function stopGame(){
     console.log('stopGame clicked');
+    window.location.reload();
 }
 //this is supposed to see if the pattern followed by
 //the user matches the pattern made by the flash function
