@@ -61,11 +61,11 @@ let randomSquare = 0;
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
-randomSquare = getRndInteger(0,4);
+//randomSquare = getRndInteger(0,4);
 
 //filling flashArray with random integers
-for(let i = 0; i < 6; i++){
-    flashArray += getRndInteger(0,3);
+for(let i = 0; i < 8; i++){
+    flashArray += getRndInteger(0,5);
     console.log('flashArray = ', flashArray);
 }
 
@@ -138,7 +138,7 @@ function verifyFlashPattern(evt){
     //this part is checking if clicked array matches the random
     //array
         checkArray += evt.target.id
-        if(clicks == 5) { 
+        if(clicks == 7) { 
             if(checkArray === flashArray && checkArray.length === flashArray.length){
             console.log('its a match');
             message = 'Its a match';
