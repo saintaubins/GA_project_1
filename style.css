@@ -8,7 +8,6 @@ body {
 }
 
 /* Navigation */
-
 .navbar {
     font-family: 'Indie Flower', cursive;
     text-transform: uppercase;
@@ -36,207 +35,36 @@ body {
 .home-inner {
     background-image: url(back1.jpg);
   }
-/* .home-outer {
-    background-image: url(back2.jpg);
-  } */
-  .caption {
+.caption {
     width: 100%;
     max-width: 100%;
     position: absolute;
-    top: 38%;
+    top: 30%;
     z-index: 1;
     color: white;
     text-transform: uppercase;
-  }
-  .caption h1 {
+    text-shadow: .1rem .1rem 2rem black;
+}
+.caption h1 {
     font-family: 'Indie Flower', cursive;
     font-size: 3.8rem;
     font-weight: 700;
     letter-spacing: .3rem;
-    text-shadow: .1rem .1rem .8rem balck;
+    text-shadow: .1rem .1rem 2rem black;
     padding-bottom: 1rem;
-  }
-  .caption h3 {
+}
+.caption h3 {
     font-size: 2rem;
-    text-shadow: .1rem .1rem .5rem black;
+    text-shadow: .1rem .1rem 2rem black;
     padding-bottom: 1.6rem;
-  }
-  .btn-lg {
+}
+.btn-lg {
+    text-shadow: .1rem .1rem 2rem black;
     border-radius: 0;
     border-width: medium;
     padding: .6rem 1.3rem;
     font-size: 1.1rem; 
-  }
-
-  /*============= COURSE SECTION =============*/
-
-.narrow {
-    width: 75%;
-    margin: 1.5rem auto;
-    padding-top: 2rem;
-  }
-  .narrow h1 {
-      font-size: 2.4rem;
-    }
-  .btn-secondary {
-    border-width: medium;
-    border-radius: 0;
-    padding: .6rem 1.2rem;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    margin: 1rem;
-    border-color: #1EBBA3;
-    background-color: #1EBBA3;
-    color: white;
-  }
-  .btn-secondary:hover,
-  .btn-secondary:focus {
-    border-color: #189582;
-    background-color: #189582;
-    color: white;
-  }
-
-/* h1{
-    color: rgb(223, 152, 191);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}  */
-/* h2{
-    color: rgb(223, 152, 191);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center; 
-} */
-/* a{
-    text-decoration: none;
-    color: rgba(208, 191, 9, 0.899);
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-} */
-.status{
-    color: rgb(223, 152, 191);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center; 
-    font-size: 30px;
- }
- /* .level{
-    color: rgb(223, 152, 191);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center; 
-    font-size: 30px;
-}  */
-.container{
-    display: grid;
-    background-color: lightgreen;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    grid-template-columns: auto auto;
-    padding: 10px;
-    /* text-align: center; */
-
 }
-.square{
-    color: black;
-    border: 2px solid grey;
-    border-radius: 10px;
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    padding: 20px;
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
-    text-align: center;
-    margin: auto;
-}
-.start{
-    color: black;
-    border: 2px solid grey;
-    border-radius: 10px;
-    background-color: rgba(25, 210, 118, 0.615);
-    padding: 20px;
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
-    text-align: center;
-    margin: auto;
-}
-.reset{
-    color: black;
-    border: 2px solid grey;
-    border-radius: 10px;
-    background-color: rgba(237, 44, 10, 0.8);
-    padding: 20px;
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
-    text-align: center;
-    margin: auto;
-}
-.flash{
-    color: black;
-    border: 2px solid grey;
-    border-radius: 10px;
-    background-color: rgba(215, 183, 238, 0.8);
-    padding: 20px;
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
-    text-align: center;
-    margin: auto;
-
-}
-.sq0{
-    color: black;
-    border: 2px solid grey;
-    border-radius: 10px;
-    background-color: rgba(187, 14, 55, 0.8);
-    padding: 20px;
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
-    text-align: center;
-    margin: auto;
-
-} 
-.sq1{
-    color: black;
-    border: 2px solid grey;
-    border-radius: 10px;
-    background-color: rgba(187, 14, 55, 0.8);
-    padding: 20px;
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
-    text-align: center;
-    margin: auto;
-
-}
-.sq2{
-    color: black;
-    border: 2px solid grey;
-    border-radius: 10px;
-    background-color: rgba(187, 14, 55, 0.8);
-    padding: 20px;
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
-    text-align: center;
-    margin: auto;
-
-}
-.sq3{
-    color: black;
-    border: 2px solid grey;
-    border-radius: 10px;
-    background-color: rgba(187, 14, 55, 0.8);
-    padding: 20px;
-    height: 40px;
-    width: 40px;
-    font-size: 20px;
-    text-align: center;
-    margin: auto;
-
-}
-
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)

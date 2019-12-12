@@ -24,7 +24,7 @@ console.log('javaScript is live');
 let start = document.querySelector('.start');
 
 //Grabbing stop button from the DOM
-let stop = document.querySelector('.stop');
+let reset = document.querySelector('.reset');
 
 //grabbing the squares from the DOM
 //note the array is already filled
@@ -53,7 +53,7 @@ let checkArray = [];
 //let delay = 1000;
 /********************  Variables ***************************/
 
-let randomSquare = 0;
+//let randomSquare = 0;
 
 //This JavaScript function always returns a random number 
 //between min and max (both included):, got this from W3 
@@ -61,11 +61,11 @@ let randomSquare = 0;
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
-randomSquare = getRndInteger(0,4);
+//randomSquare = getRndInteger(0,4);
 
 //filling flashArray with random integers
-for(let i = 0; i < 5; i++){
-    flashArray += getRndInteger(0,3);
+for(let i = 0; i < 10; i++){
+    flashArray += getRndInteger(0,5);
     console.log('flashArray = ', flashArray);
 }
 
@@ -82,7 +82,7 @@ for (let i = 0; i < square.length; i++){
 start.addEventListener('click', flashPattern);
 
 //eventListener to stop the game
-stop.addEventListener('click', stopGame);
+reset.addEventListener('click', resetGame);
 
 /******************* My functions **************************/
 
@@ -120,7 +120,7 @@ function flashPattern(){
     //done  = true;
 }
 //making function called stop game to stop the game.
-function stopGame(){
+function resetGame(){
     console.log('stopGame clicked');
     window.location.reload();
 }
@@ -138,7 +138,7 @@ function verifyFlashPattern(evt){
     //this part is checking if clicked array matches the random
     //array
         checkArray += evt.target.id
-        if(clicks == 4) { 
+        if(clicks == 9) { 
             if(checkArray === flashArray && checkArray.length === flashArray.length){
             console.log('its a match');
             message = 'Its a match';

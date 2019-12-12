@@ -53,7 +53,7 @@ let checkArray = [];
 //let delay = 1000;
 /********************  Variables ***************************/
 
-let randomSquare = 0;
+//let randomSquare = 0;
 
 //This JavaScript function always returns a random number 
 //between min and max (both included):, got this from W3 
@@ -61,7 +61,7 @@ let randomSquare = 0;
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
-randomSquare = getRndInteger(0,3);
+//randomSquare = getRndInteger(0,3);
 
 //filling flashArray with random integers
 for(let i = 0; i < 4; i++){

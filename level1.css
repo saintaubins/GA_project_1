@@ -8,6 +8,7 @@ body {
 }
 
 /* Navigation */
+
 .navbar {
     font-family: 'Indie Flower', cursive;
     text-transform: uppercase;
@@ -32,7 +33,7 @@ body {
 }
 /* langing page */
 .home-inner {
-    background-image: url(back7.jpg);
+    background-image: url(back5.jpg);
 }
 .caption {
     width: 100%;
@@ -40,37 +41,35 @@ body {
     position: absolute;
     top: 19%;
     z-index: 1;
-    color: black;
+    color: white;
     text-transform: uppercase;
-    text-shadow: .1rem .1rem 2rem red;
+    text-shadow: .1rem .1rem 2rem white;
 }
 .caption h1 {
-    color: black;
     font-family: 'Indie Flower', cursive;
     font-size: 3rem;
     font-weight: 700;
     letter-spacing: .3rem;
-    text-shadow: .1rem .1rem 2rem red;
+    text-shadow: .1rem .1rem 2rem white;
     padding-bottom: 1rem;
 }
 .caption h3 {
-    color: black;
     font-size: 2rem;
-    text-shadow: .1rem .1rem 2rem red;
+    text-shadow: .1rem .1rem 2rem white;
     padding-bottom: 1.6rem;
 }
 .btn-lg {
-    text-shadow: .1rem .1rem 2rem red;
+    border: 1px solid red;
+    color: white;
     padding: .6rem 1.3rem;
     font-size: 1.1rem; 
-    color: black;
-    border: 1px solid black;
+    text-shadow: .1rem .1rem 2rem white;
 }
 .status{
-    color: black;
+    text-shadow: .1rem .1rem 2rem white;
+    color: rgb(228, 218, 224);
     font-family: 'Indie Flower', cursive;
     text-align: center; 
-    text-shadow: .1rem .1rem 2rem red;
     font-size: 30px;
  }
 .container{
@@ -81,8 +80,9 @@ body {
     padding: 10px;
 }
 .square{
-    color: black;
-    border: 1px solid black;
+    text-shadow: .1rem .1rem 2rem white;
+    color: white;
+    border: 1px solid red;
     border-radius: 10px;
     padding: 20px;
     height: 80px;
@@ -92,8 +92,8 @@ body {
     margin: auto;
 }
 .start{
-    color: black;
-    border: 1px solid black;
+    color: white;
+    border: 1px solid red;
     border-radius: 10px;
     background-color: rgba(35, 123, 79, 0.615);
     padding: 20px;
@@ -105,8 +105,8 @@ body {
     margin: auto;
 }
 .reset{
-    color: black;
-    border: 1px solid black;
+    color: white;
+    border: 1px solid red;
     border-radius: 10px;
     background-color: rgba(128, 48, 34, 0.8);
     padding: 20px;
