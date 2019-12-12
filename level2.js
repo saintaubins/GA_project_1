@@ -35,8 +35,26 @@ console.log('square.length = ', square.length);
 let status = document.querySelector('.status');
 let level = document.querySelector('.level');
 
+//getting wins num from the dom
+let winsnum = document.querySelector('.winsnum');
+
+//getting losses num fro the dom
+let lossesnum = document.querySelector('.lossesnum');
+
+//getting button from the dom
+let playagain = document.querySelector('#playagain');
+console.log('play again button', playagain);
+
 //I need a global variable called clicks
 let clicks = 0;
+
+//defining a string called message
+let message = '';
+
+//defining a number to keeptrack of wins and keeptrack losses
+let keepTrackW = 0;
+let keepTrackL = 0;
+
 /********************** My Arrays **************************/
 
 
@@ -80,11 +98,32 @@ for (let i = 0; i < square.length; i++){
 }
 //eventListener to start the game
 start.addEventListener('click', flashPattern);
+start.addEventListener('mouseover', sTurnWhite);
+start.addEventListener('mouseout', sMouseOut);
 
 //eventListener to stop the game
 reset.addEventListener('click', resetGame);
+reset.addEventListener('mouseover', rTurnWhite);
+reset.addEventListener('mouseout', rMouseOut);
+//playagain event listener
+playagain.addEventListener('click', playingAgain);
 
 /******************* My functions **************************/
+function rTurnWhite(){
+    reset.classList.add('white');
+}
+
+function sTurnWhite(){
+    start.classList.add('white');
+}
+
+function sMouseOut(){
+    start.classList.remove('white');
+}
+
+function rMouseOut(){
+    reset.classList.remove('white');
+}
 
 //1. Making a function called flash, this will reference
 //a class with the opacity class to be active, and inactive, 
@@ -119,6 +158,22 @@ function flashPattern(){
     delay = 0;
     //done  = true;
 }
+function playingAgain(){
+    console.log('playinAgain clicked');
+    clicks = 0;
+    flashArray = [];
+    console.log('flashArray = ',flashArray);
+    checkArray = [];
+    console.log('checkArray = ', checkArray);
+    for(let i = 0; i < 10; i++){
+        flashArray += getRndInteger(0,5);
+        console.log('flashArray = ', flashArray);
+    }
+    flashPattern();
+    //verifyFlashPattern();
+    status.innerHTML = 'Status';
+}
+
 //making function called stop game to stop the game.
 function resetGame(){
     console.log('stopGame clicked');
@@ -133,22 +188,26 @@ function verifyFlashPattern(evt){
     evt.target.classList.add('flash');
     setTimeout(() => {
         evt.target.classList.remove('flash');
-    },250);
+    },100);
     console.log('verifyFlashPattern function works');
     //this part is checking if clicked array matches the random
     //array
         checkArray += evt.target.id
-        if(clicks == 9) { 
+        if(clicks == (flashArray.length - 1)) { 
             if(checkArray === flashArray && checkArray.length === flashArray.length){
-            console.log('its a match');
-            message = 'Its a match';
-            status.innerHTML = message;
-            console.log('status.innerHTML = ',status.innerHtml);
-            }  else{
-                message = 'Sorry try again';
+                keepTrackW = keepTrackW + 1;
+                console.log('its a match');
+                message = 'You Win';
                 status.innerHTML = message;
-                console.log('sorry try again');
-                }
+                winsnum.innerHTML = keepTrackW;
+                console.log('status.innerHTML = ',status.innerHTML);
+                }  else{
+                    keepTrackL = keepTrackL + 1;
+                    lossesnum.innerHTML = keepTrackL;
+                    message = 'Sorry try again';
+                    status.innerHTML = message;
+                    console.log('sorry try again');
+                    }
             console.log('checkArray = ', checkArray);
         }
      clicks++;

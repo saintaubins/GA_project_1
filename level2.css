@@ -124,6 +124,19 @@ body {
     text-align: center;
     margin: auto;
 }
+.white{
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(247, 247, 247, 0.8);
+    padding: 20px;
+    padding-top: 30px;
+    height: 80px;
+    width: 80px;
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+}
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
