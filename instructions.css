@@ -2,7 +2,7 @@
 
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: 'Indie Flower', cursive;
   color: white;
 }
@@ -20,17 +20,18 @@ body {
 .navbar-brand img {
     height: 2rem;
 }
-.nav-bar li {
-      padding-right: .7rem;
+.navbar-nav li {
+    padding-right: .7rem;
 }
-.nav-bar .navbar-nav .nav-link {
-    color: white;
-    padding-top: .8rem;
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
 }
-.nav-bar .navbar-nav .nav-link.active,
-.nav-bar .navbar-nav .nav-link:hover {
-    color: #1EBBA3;
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #1EBBA3;
 }
+
 
   /* langing page */
 .home-inner {
@@ -40,7 +41,7 @@ body {
     width: 100%;
     max-width: 100%;
     position: absolute;
-    top: 18%;
+    top: 10%;
     z-index: 1;
     color: white;
     text-transform: uppercase;
@@ -48,7 +49,7 @@ body {
 }
 .caption h1 {
     font-family: 'Indie Flower', cursive;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: .3rem;
     text-shadow: .1rem .1rem 1.5rem red;

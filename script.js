@@ -18,6 +18,7 @@
 //testing the connection to HTML
 console.log('javaScript is live');
 
+
 /************* Variables from the DOM **********************/
 
 //Grabbing start button from the DOM

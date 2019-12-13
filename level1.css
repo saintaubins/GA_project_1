@@ -2,7 +2,7 @@
 
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: 'Indie Flower', cursive;
   color: darkslategrey;
 }
@@ -20,15 +20,15 @@ body {
 .navbar-brand img {
     height: 2rem;
 }
-.nav-bar li {
-      padding-right: .7rem;
+.navbar-nav li {
+    padding-right: .7rem;
 }
-.nav-bar .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
     color: white;
     padding-top: .8rem;
 }
-.nav-bar .navbar-nav .nav-link.active,
-.nav-bar .navbar-nav .nav-link:hover {
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
     color: #1EBBA3;
 }
 /* langing page */
@@ -39,7 +39,7 @@ body {
     width: 100%;
     max-width: 100%;
     position: absolute;
-    top: 19%;
+    top: 10%;
     z-index: 1;
     color: white;
     text-transform: uppercase;
@@ -47,14 +47,14 @@ body {
 }
 .caption h1 {
     font-family: 'Indie Flower', cursive;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: .3rem;
     text-shadow: .1rem .1rem 2rem white;
     padding-bottom: 1rem;
 }
 .caption h3 {
-    font-size: 2rem;
+    font-size: 1rem;
     text-shadow: .1rem .1rem 2rem white;
     padding-bottom: 1.6rem;
 }
@@ -74,8 +74,8 @@ body {
  }
 .container{
     display: grid;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     grid-template-columns: auto auto;
     padding: 10px;
 }
@@ -85,8 +85,8 @@ body {
     border: 1px solid red;
     border-radius: 10px;
     padding: 20px;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     font-size: 25px;
     text-align: center;
     margin: auto;
@@ -97,10 +97,10 @@ body {
     border-radius: 10px;
     background-color: rgba(35, 123, 79, 0.615);
     padding: 20px;
-    padding-top: 30px;
-    height: 80px;
-    width: 80px;
-    font-size: 15px;
+    padding-top: 20px;
+    height: 60px;
+    width: 60px;
+    font-size: 10px;
     text-align: center;
     margin: auto;
 }
@@ -110,10 +110,10 @@ body {
     border-radius: 10px;
     background-color: rgba(128, 48, 34, 0.8);
     padding: 20px;
-    padding-top: 30px;
-    height: 80px;
-    width: 80px;
-    font-size: 15px;
+    padding-top: 20px;
+    height: 60px;
+    width: 60px;
+    font-size: 10px;
     margin: auto;
 }
 .flash{
@@ -122,9 +122,9 @@ body {
     border-radius: 10px;
     background-color: rgba(167, 165, 169, 0.8);
     padding: 20px;
-    height: 80px;
-    width: 80px;
-    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    font-size: 25px;
     text-align: center;
     margin: auto;
 }
@@ -134,10 +134,10 @@ body {
     border-radius: 10px;
     background-color: rgba(247, 247, 247, 0.8);
     padding: 20px;
-    padding-top: 30px;
-    height: 80px;
-    width: 80px;
-    font-size: 15px;
+    padding-top: 20px;
+    height: 60px;
+    width: 60px;
+    font-size: 10px;
     text-align: center;
     margin: auto;
 }

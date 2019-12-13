@@ -2,7 +2,7 @@
 
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: 'Indie Flower', cursive;
   color: darkslategrey;
 }
@@ -19,15 +19,15 @@ body {
   .navbar-brand img {
     height: 2rem;
   }
-  .nav-bar li {
+  .navbar-nav li {
       padding-right: .7rem;
   }
-  .nav-bar .navbar-nav .nav-link {
+  .navbar-dark .navbar-nav .nav-link {
     color: white;
     padding-top: .8rem;
   }
-  .nav-bar .navbar-nav .nav-link.active,
-  .nav-bar .navbar-nav .nav-link:hover {
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link:hover {
     color: #1EBBA3;
   }
 
