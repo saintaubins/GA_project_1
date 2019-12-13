@@ -45,3 +45,4 @@ https://saintaubins.github.io/saintaubins.github.io-GA_project_1/
 
 Any other questions, please advise!  
         
+        thing works fine, I had styling input from, family members. the only thing I would add is more levels, and make each level faster. 
