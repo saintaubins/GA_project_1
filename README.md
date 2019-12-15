@@ -1,5 +1,6 @@
 # GA_project_1
 
+git add .
 Everything works fine, I have no major issues, The application renders in the browser and runs with without any errors, on every page! Please note, I have 5 pages, as of this writing. The poject is deployed to GitHub Pages, and not a custom domain. I had some styling input from, family members to help me with UI, and UX. The only thing that I would add, is more levels, and make each proceeding level faster, or more difficult. I have 3 levels, as of this writing. One only other thing I regret is, I didn't use classes, and create instances of the classes or class, as an incorporation of my design. I will try next time, if it is applicable.
 
 I can lay out instructions of the web pages here, this is also in my instructions page, of the website. they are as follows,... for my Simon, Memory Game:

@@ -33,7 +33,7 @@ body {
 }
 /* langing page */
 .home-inner {
-    background-image: url(back5.jpg);
+    background-image: url(back10.jpg);
 }
 .caption {
     width: 100%;
@@ -59,7 +59,7 @@ body {
     padding-bottom: 1.6rem;
 }
 .btn-lg {
-    border: 1px solid red;
+    border: 1px solid purple;
     color: white;
     padding: .6rem 1.3rem;
     font-size: 1.1rem; 
@@ -82,7 +82,7 @@ body {
 .square{
     text-shadow: .1rem .1rem 2rem white;
     color: white;
-    border: 1px solid red;
+    border: 1px solid purple;
     border-radius: 10px;
     padding: 20px;
     height: 60px;
@@ -93,7 +93,7 @@ body {
 }
 .start{
     color: white;
-    border: 1px solid red;
+    border: 1px solid purple;
     border-radius: 10px;
     background-color: rgba(35, 123, 79, 0.615);
     padding: 20px;
@@ -106,7 +106,7 @@ body {
 }
 .reset{
     color: white;
-    border: 1px solid red;
+    border: 1px solid purple;
     border-radius: 10px;
     background-color: rgba(128, 48, 34, 0.8);
     padding: 20px;
